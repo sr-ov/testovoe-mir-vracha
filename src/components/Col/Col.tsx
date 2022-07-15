@@ -20,7 +20,7 @@ const Col: React.FunctionComponent<IColProps> = ({ colTitle, imgSrc, children })
 				</div>
 			</div>
 
-			<div className="space-y-4 text-[color:var(--c-prim)]">
+			<div className="space-y-4 text-c-prim">
 				{React.Children.map(children, (child, i) => {
 					return React.cloneElement(child as React.ReactElement, {
 						key: i,
