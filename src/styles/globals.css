@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900);
+
 :root {
 	--main-bg: linear-gradient(
 		180deg,
@@ -9,14 +11,15 @@
 		rgba(217, 246, 251, 0.5833) 25%,
 		#caf2fa 100%
 	);
+	--ff-prim: 'Roboto';
 }
 
 html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-		Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-family: var(--ff-prim), -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+		Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	min-height: 100vh;
 	overflow-x: hidden;
 }
